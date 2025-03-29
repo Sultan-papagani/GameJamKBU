@@ -430,5 +430,34 @@ footer
     justify-content: center;
     align-items: center;
     min-height: 100px;
-    font-size: 34px;
+    font-size: 14px;
+}
+
+#logo-container
+{
+    width: 80%;
+    max-width: 80%;
+    border: 5px solid blue;
+}
+
+#logo-top-eleman
+{
+    border: 5px solid blue;
+}
+
+#logo-top-eleman-buyuk
+{
+    border: 5px solid blue;
+    width: 200px;
+}
+
+@media screen and (max-width:600px) {
+    #ust_logo
+    {
+        display: none;
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    
 }
