@@ -1,3 +1,3 @@
 # GameJamKBU
-ucuz unity oyunları yapma etkinliği için basit statik html sitesi<br>
+gamejam için statik website.<br>
 live-server ile kullanın!
