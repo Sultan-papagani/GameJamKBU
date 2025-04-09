@@ -5,34 +5,41 @@
 
 :root
 {
-    --site-arkaplan: #181c3e;
+    
     --kurdele: #db8acd;
     --mor-yazi: #b55ece;
     --acikpembe-yazi: #f63ffc;
     --koyu-mor: #b45ad3;
     --kirmizi-yazi: #8b0000;
-    --kayit-buton-rengi:#78beda;
+    --kayit-buton-rengi:#00314d;
     --kayit-buton-hover: #689ade;
     --yazi-rengi: white;
     --sari-yazi: #f4c710;
     --koyumavi-yazi: #1494c7;
     --acikmavi-yazi: #98a3e9;
     --neonyesil-yazi: #c1ed63;
-    --acik-yesil: #cdea70;
+    --acik-yesil: #9b70ea;
     --etkinlik-arkaplan: #8c8adb;
     --etkinlik-baslik-renk: #00314d;
     --dikey-ayrac: #c1d6f3;
-    --kurallar-arkaplan: #ac36c9;
-    --sikca-sorulan-arkaplan: #0a143d;
+    --kurallar-arkaplan:#869f77;
+    --sikca-sorulan-arkaplan: #6698e4;
 }
 
 
 
 body
 {
-    background-color: var(--site-arkaplan);
+    background-color: #00314d;
+    margin: 0;
+      padding: 0;
+      background-image: url('01.png'); /* Arka plan resmi */
+      background-size: cover;        /* Ekrana tam oturması için */
+      background-position: center;   /* Ortalanması */
+      background-repeat: repeat;  /* Tekrar etmesini engelle */
+      height: 100vh; 
     color: var(--yazi-rengi);
-    font-family: "Montserrat", sans-serif;
+    font-family:  Arial, Helvetica, sans-serif;
 }
 
 #logo
@@ -50,6 +57,8 @@ body
     {
         width: 95% !important;
         min-width: 95% !important;
+        background-color: white;
+        color: black;
     }
 
     .kurdele p
@@ -185,19 +194,28 @@ body
     background-color: var(--kayit-buton-rengi);
     border-radius: 16px;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 0.2rem;
     margin-top: 2rem;
     transition: 0.2s;
     padding: 1rem;
+    width:500px;
+    height: 175px;
+    background-image: url('IMG_3771.png'); /* Resim URL'si */
+      background-size: cover; /* Resmin butona tam oturması için */
+      background-position: center; /* Ortalanması */
+      border-style: none;
 }
 
-#kayit-butonu:hover
+ /* #kayit-butonu:hover
 {
-    background-color: var(--kayit-buton-hover);
+    background-color:#6698e4;
     color:white;
+    align-items: center;
+    justify-content: center;
+    
     transition: 0.2s;
-}
+}  */
 
 #text-container
 {
@@ -240,10 +258,15 @@ body
     border-radius: 32px;
     color: var(--site-arkaplan);
     padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 200;
     letter-spacing: 0.2rem;
     margin-top: 2rem;
+    
+}
+#katil-buton:hover{
+    font-size: 17px;
+    background-color:blueviolet;
 }
 
 @media screen and (max-width:600px) {
@@ -266,10 +289,7 @@ body
         width: 0px !important;
     }
 
-    #katil-buton
-    {
-        font-size: 1.2rem;
-    }
+    
 }
 
 #etkinlik-plan-container
@@ -364,6 +384,8 @@ body
     max-width: 600px;
     background-color: var(--kurallar-arkaplan);
     font-size: 1.4rem;
+    color: #fde9ea;
+    text-align: center;
 }
 
 #kurallar p
@@ -377,12 +399,14 @@ body
     background-color: var(--sikca-sorulan-arkaplan);
     max-width: 1000px;
     margin-bottom: 2rem;
+    border-radius: 10px;
 }
 
 #sorular-stack
 {
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 #sorular-stack button
@@ -451,13 +475,102 @@ footer
     width: 200px;
 }
 
-@media screen and (max-width:600px) {
-    #ust_logo
-    {
-        display: none;
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-    }
-    
+
+.logo_arkaplan
+{
+    max-width: 100vw;
 }
+
+.bosluk{
+    height: 25vh;
+}
+
+.logo
+{
+    display: block;
+    position: absolute;
+    max-width: 50vw;
+    transform: translate(50%, -100%);
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 10px !important; /* Reduced height when sticky */
+    z-index: 100;
+}
+
+.icerik-body{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.icerik{
+    background-color: #98cb98;
+}
+
+.parca-logo{
+    max-width: 20%;
+}
+.parca-logo2{
+    max-width: 25%;
+}
+
+.page1{
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .icerik-body{
+        margin-top: 3rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .parca-logo{
+        max-width: 60px;
+    }
+    .page1{
+        margin-top: 2rem;
+    }
+}
+#basvur-buton{
+    align-items: center;
+    align-self: start;
+    width: 100%;
+    height: 100%;
+}
+
+#sporgenc{
+    max-width: 120px; max-height: 120px; margin-top: 0.2rem;
+}
+
+#unides{
+    align-self: right; max-width: 200px; max-height: 140px;
+}
+
+#gamefactory{
+    max-width: 120px; max-height: 120px; margin-top: 0.2rem;
+}
+
+#logo_k{
+    max-width: 150px; max-height: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    #kayit-butonu{
+      max-width: 200px;
+      background-size:contain;
+      background-repeat: no-repeat;
+    }
+    #sporgenc{max-width: 70px; max-height: 70px;} 
+    #unides{max-width: 80px; max-height: 50px;} 
+    #gamefactory{max-width: 70px; max-height: 70px;}
+    #logo_k{max-width: 70px; max-height: 70px;}
+  }
+  
