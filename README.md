@@ -1,4 +1,6 @@
 # GameJamKBU
-gamejam için statik website.<br>
+Karabük Üniversitesi Gamejam Etkinliği için websayfası <br>
+
+### Link (credits, footer'da)
 https://karabukdkke.neocities.org
 
